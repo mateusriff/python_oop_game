@@ -16,6 +16,8 @@ def main():
             break
 
         game.render()
+        
+        game.update()
 
 
 if __name__ == "__main__":
