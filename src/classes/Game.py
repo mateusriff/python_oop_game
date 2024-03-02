@@ -17,4 +17,7 @@ class Game:
 
     def render(self):
         self.screen.fill((25, 0, 50))
+
+    @staticmethod
+    def update():
         pygame.display.flip()
