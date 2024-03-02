@@ -1,8 +1,21 @@
 import pygame
+from classes import Game
+
+clock = pygame.time.Clock()
 
 
 def main():
-    print("pygame version:", pygame.__version__)
+    game = Game()
+
+    while True:  # main game loop
+        global clock
+        clock.tick(60)
+
+        if game.should_quit():
+            pygame.quit()
+            break
+
+        game.render()
 
 
 if __name__ == "__main__":
