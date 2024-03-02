@@ -2,7 +2,9 @@
 # Include the class name on the __all__ array to export it.
 
 from .example_class import ExampleClass  # importing class ExampleClass
+from .Game import Game
 
 __all__ = [
     'ExampleClass',  # exporting class ExampleClass
+    'Game',
 ]
