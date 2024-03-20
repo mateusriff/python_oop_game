@@ -18,6 +18,7 @@ class Text(pygame.sprite.Sprite):
     def draw(self, surface):
         surface.blit(self.image, self.rect)
 
+
 class FadingText(Text):
     def __init__(self, text, font, size, x, y, fade_speed=2):
         super().__init__(text, font, size, x, y)
